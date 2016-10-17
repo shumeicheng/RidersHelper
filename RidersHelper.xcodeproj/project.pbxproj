@@ -1,0 +1,748 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F107F9731D94A2AF00598101 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F107F9721D94A2AF00598101 /* Constants.swift */; };
+		F18E7CD81D98C7DC00704934 /* RouteStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18E7CD71D98C7DC00704934 /* RouteStep.swift */; };
+		F19AE2851DA9B2DD00CF0F27 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19AE2841DA9B2DD00CF0F27 /* Location.swift */; };
+		F19AE2871DA9B33500CF0F27 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19AE2861DA9B33500CF0F27 /* Friend.swift */; };
+		F19AE2891DA9B40300CF0F27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F19AE2881DA9B40300CF0F27 /* Main.storyboard */; };
+		F19AE28B1DA9B43100CF0F27 /* StartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19AE28A1DA9B43100CF0F27 /* StartController.swift */; };
+		F19AE28D1DA9B45B00CF0F27 /* MenuPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19AE28C1DA9B45B00CF0F27 /* MenuPickerController.swift */; };
+		F19AE28F1DA9B47A00CF0F27 /* DirectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19AE28E1DA9B47A00CF0F27 /* DirectionTableViewController.swift */; };
+		F19AE2911DA9B49900CF0F27 /* RoutesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19AE2901DA9B49900CF0F27 /* RoutesTableViewController.swift */; };
+		F19AE2931DA9B4B500CF0F27 /* RouteDirections.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19AE2921DA9B4B500CF0F27 /* RouteDirections.swift */; };
+		F19AE2951DA9B4DA00CF0F27 /* GmapUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19AE2941DA9B4DA00CF0F27 /* GmapUtils.swift */; };
+		F19AE2971DA9B4EA00CF0F27 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19AE2961DA9B4EA00CF0F27 /* Person.swift */; };
+		F19AE2991DA9B52700CF0F27 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19AE2981DA9B52700CF0F27 /* Route.swift */; };
+		F19AE29B1DA9B57C00CF0F27 /* MapTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19AE29A1DA9B57C00CF0F27 /* MapTasks.swift */; };
+		F19AE29D1DA9C5C900CF0F27 /* CloudLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19AE29C1DA9C5C900CF0F27 /* CloudLocation.swift */; };
+		F1AA15331D8525160015907C /* icon_me.imageset in Resources */ = {isa = PBXBuildFile; fileRef = F1AA15321D8525160015907C /* icon_me.imageset */; };
+		F1B2413E1DB08B0500A15217 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B2413D1DB08B0500A15217 /* Reachability.swift */; };
+		F1B241401DB091E100A15217 /* AlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B2413F1DB091E100A15217 /* AlertMessage.swift */; };
+		F1B54B5A1DA069A700A7E05A /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B54B591DA069A700A7E05A /* Realm.framework */; };
+		F1B54B5B1DA069A700A7E05A /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F1B54B591DA069A700A7E05A /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F1B54B5E1DA069B100A7E05A /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B54B5D1DA069B100A7E05A /* RealmSwift.framework */; };
+		F1B54B5F1DA069B100A7E05A /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F1B54B5D1DA069B100A7E05A /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F1E8F83F1D6777AC00E20F5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E8F83E1D6777AC00E20F5E /* AppDelegate.swift */; };
+		F1E8F8461D6777AC00E20F5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E8F8451D6777AC00E20F5E /* Assets.xcassets */; };
+		F1E8F8491D6777AC00E20F5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E8F8471D6777AC00E20F5E /* LaunchScreen.storyboard */; };
+		F1E8F8541D6777AC00E20F5E /* RidersHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E8F8531D6777AC00E20F5E /* RidersHelperTests.swift */; };
+		F1E8F85F1D6777AC00E20F5E /* RidersHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E8F85E1D6777AC00E20F5E /* RidersHelperUITests.swift */; };
+		F1EBCCA71D7753380096846C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EBCCA61D7753380096846C /* CloudKit.framework */; };
+		F7E754B1C6B7A364CA4586FD /* libPods-RidersHelper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF56599B2704F01D61AE969 /* libPods-RidersHelper.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1E8F8501D6777AC00E20F5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1E8F8331D6777AC00E20F5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1E8F83A1D6777AC00E20F5E;
+			remoteInfo = RidersHelper;
+		};
+		F1E8F85B1D6777AC00E20F5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1E8F8331D6777AC00E20F5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1E8F83A1D6777AC00E20F5E;
+			remoteInfo = RidersHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F1B54B5C1DA069A700A7E05A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F1B54B5F1DA069B100A7E05A /* RealmSwift.framework in Embed Frameworks */,
+				F1B54B5B1DA069A700A7E05A /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		25B49720C20F22CFE6EE0290 /* Pods-RidersHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RidersHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RidersHelper/Pods-RidersHelper.debug.xcconfig"; sourceTree = "<group>"; };
+		7DAD1D4F85B952E2968BB001 /* Pods-RidersHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RidersHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-RidersHelper/Pods-RidersHelper.release.xcconfig"; sourceTree = "<group>"; };
+		BAF56599B2704F01D61AE969 /* libPods-RidersHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RidersHelper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F107F9721D94A2AF00598101 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F18E7CD71D98C7DC00704934 /* RouteStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteStep.swift; sourceTree = "<group>"; };
+		F19AE2841DA9B2DD00CF0F27 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		F19AE2861DA9B33500CF0F27 /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		F19AE2881DA9B40300CF0F27 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F19AE28A1DA9B43100CF0F27 /* StartController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartController.swift; sourceTree = "<group>"; };
+		F19AE28C1DA9B45B00CF0F27 /* MenuPickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuPickerController.swift; sourceTree = "<group>"; };
+		F19AE28E1DA9B47A00CF0F27 /* DirectionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionTableViewController.swift; sourceTree = "<group>"; };
+		F19AE2901DA9B49900CF0F27 /* RoutesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutesTableViewController.swift; sourceTree = "<group>"; };
+		F19AE2921DA9B4B500CF0F27 /* RouteDirections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteDirections.swift; sourceTree = "<group>"; };
+		F19AE2941DA9B4DA00CF0F27 /* GmapUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GmapUtils.swift; sourceTree = "<group>"; };
+		F19AE2961DA9B4EA00CF0F27 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		F19AE2981DA9B52700CF0F27 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		F19AE29A1DA9B57C00CF0F27 /* MapTasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTasks.swift; sourceTree = "<group>"; };
+		F19AE29C1DA9C5C900CF0F27 /* CloudLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudLocation.swift; sourceTree = "<group>"; };
+		F1AA15321D8525160015907C /* icon_me.imageset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icon_me.imageset; sourceTree = "<group>"; };
+		F1B2413D1DB08B0500A15217 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		F1B2413F1DB091E100A15217 /* AlertMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMessage.swift; sourceTree = "<group>"; };
+		F1B54B591DA069A700A7E05A /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		F1B54B5D1DA069B100A7E05A /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		F1E8F83B1D6777AC00E20F5E /* RidersHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RidersHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1E8F83E1D6777AC00E20F5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F1E8F8451D6777AC00E20F5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1E8F8481D6777AC00E20F5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1E8F84A1D6777AC00E20F5E /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
+		F1E8F84F1D6777AC00E20F5E /* RidersHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RidersHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1E8F8531D6777AC00E20F5E /* RidersHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidersHelperTests.swift; sourceTree = "<group>"; };
+		F1E8F8551D6777AC00E20F5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1E8F85A1D6777AC00E20F5E /* RidersHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RidersHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1E8F85E1D6777AC00E20F5E /* RidersHelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidersHelperUITests.swift; sourceTree = "<group>"; };
+		F1E8F8601D6777AC00E20F5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1EBCCA51D7753340096846C /* RidersHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RidersHelper.entitlements; sourceTree = "<group>"; };
+		F1EBCCA61D7753380096846C /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1E8F8381D6777AC00E20F5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1B54B5A1DA069A700A7E05A /* Realm.framework in Frameworks */,
+				F1EBCCA71D7753380096846C /* CloudKit.framework in Frameworks */,
+				F1B54B5E1DA069B100A7E05A /* RealmSwift.framework in Frameworks */,
+				F7E754B1C6B7A364CA4586FD /* libPods-RidersHelper.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1E8F84C1D6777AC00E20F5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1E8F8571D6777AC00E20F5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2EE00A3D5778BC60682C3BCC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAF56599B2704F01D61AE969 /* libPods-RidersHelper.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79BCE36226AFF45DA572D6B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25B49720C20F22CFE6EE0290 /* Pods-RidersHelper.debug.xcconfig */,
+				7DAD1D4F85B952E2968BB001 /* Pods-RidersHelper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F1AA15301D8523F10015907C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F19AE28A1DA9B43100CF0F27 /* StartController.swift */,
+				F19AE28C1DA9B45B00CF0F27 /* MenuPickerController.swift */,
+				F19AE28E1DA9B47A00CF0F27 /* DirectionTableViewController.swift */,
+				F1E8F83E1D6777AC00E20F5E /* AppDelegate.swift */,
+				F19AE2901DA9B49900CF0F27 /* RoutesTableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F1AA15311D8524160015907C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F19AE2881DA9B40300CF0F27 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F1E8F8321D6777AC00E20F5E = {
+			isa = PBXGroup;
+			children = (
+				F1B54B5D1DA069B100A7E05A /* RealmSwift.framework */,
+				F1B54B591DA069A700A7E05A /* Realm.framework */,
+				F1EBCCA61D7753380096846C /* CloudKit.framework */,
+				F1E8F83D1D6777AC00E20F5E /* RidersHelper */,
+				F1E8F8521D6777AC00E20F5E /* RidersHelperTests */,
+				F1E8F85D1D6777AC00E20F5E /* RidersHelperUITests */,
+				F1E8F83C1D6777AC00E20F5E /* Products */,
+				79BCE36226AFF45DA572D6B2 /* Pods */,
+				2EE00A3D5778BC60682C3BCC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F1E8F83C1D6777AC00E20F5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1E8F83B1D6777AC00E20F5E /* RidersHelper.app */,
+				F1E8F84F1D6777AC00E20F5E /* RidersHelperTests.xctest */,
+				F1E8F85A1D6777AC00E20F5E /* RidersHelperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1E8F83D1D6777AC00E20F5E /* RidersHelper */ = {
+			isa = PBXGroup;
+			children = (
+				F1AA15311D8524160015907C /* Views */,
+				F1AA15301D8523F10015907C /* Controller */,
+				F1EBCCA51D7753340096846C /* RidersHelper.entitlements */,
+				F1EBCCA01D774D6B0096846C /* Model */,
+				F1E8F8451D6777AC00E20F5E /* Assets.xcassets */,
+				F1AA15321D8525160015907C /* icon_me.imageset */,
+				F1E8F8471D6777AC00E20F5E /* LaunchScreen.storyboard */,
+				F1E8F84A1D6777AC00E20F5E /* info.plist */,
+			);
+			path = RidersHelper;
+			sourceTree = "<group>";
+		};
+		F1E8F8521D6777AC00E20F5E /* RidersHelperTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1E8F8531D6777AC00E20F5E /* RidersHelperTests.swift */,
+				F1E8F8551D6777AC00E20F5E /* Info.plist */,
+			);
+			path = RidersHelperTests;
+			sourceTree = "<group>";
+		};
+		F1E8F85D1D6777AC00E20F5E /* RidersHelperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F1E8F85E1D6777AC00E20F5E /* RidersHelperUITests.swift */,
+				F1E8F8601D6777AC00E20F5E /* Info.plist */,
+			);
+			path = RidersHelperUITests;
+			sourceTree = "<group>";
+		};
+		F1EBCCA01D774D6B0096846C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F19AE2961DA9B4EA00CF0F27 /* Person.swift */,
+				F19AE2861DA9B33500CF0F27 /* Friend.swift */,
+				F19AE2841DA9B2DD00CF0F27 /* Location.swift */,
+				F19AE2981DA9B52700CF0F27 /* Route.swift */,
+				F19AE2921DA9B4B500CF0F27 /* RouteDirections.swift */,
+				F19AE29A1DA9B57C00CF0F27 /* MapTasks.swift */,
+				F19AE2941DA9B4DA00CF0F27 /* GmapUtils.swift */,
+				F18E7CD71D98C7DC00704934 /* RouteStep.swift */,
+				F107F9721D94A2AF00598101 /* Constants.swift */,
+				F19AE29C1DA9C5C900CF0F27 /* CloudLocation.swift */,
+				F1B2413D1DB08B0500A15217 /* Reachability.swift */,
+				F1B2413F1DB091E100A15217 /* AlertMessage.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1E8F83A1D6777AC00E20F5E /* RidersHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1E8F8631D6777AC00E20F5E /* Build configuration list for PBXNativeTarget "RidersHelper" */;
+			buildPhases = (
+				0817334BA5B80F023734DFFE /* [CP] Check Pods Manifest.lock */,
+				F1E8F8371D6777AC00E20F5E /* Sources */,
+				F1E8F8381D6777AC00E20F5E /* Frameworks */,
+				F1E8F8391D6777AC00E20F5E /* Resources */,
+				399243CC55CFC2F1F8C199A6 /* [CP] Embed Pods Frameworks */,
+				881DE6DA8D5E06BBB8D12A10 /* [CP] Copy Pods Resources */,
+				F1B54B5C1DA069A700A7E05A /* Embed Frameworks */,
+				F1B54B601DA06B8800A7E05A /* bash "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh" */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RidersHelper;
+			productName = RidersHelper;
+			productReference = F1E8F83B1D6777AC00E20F5E /* RidersHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1E8F84E1D6777AC00E20F5E /* RidersHelperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1E8F8661D6777AC00E20F5E /* Build configuration list for PBXNativeTarget "RidersHelperTests" */;
+			buildPhases = (
+				F1E8F84B1D6777AC00E20F5E /* Sources */,
+				F1E8F84C1D6777AC00E20F5E /* Frameworks */,
+				F1E8F84D1D6777AC00E20F5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1E8F8511D6777AC00E20F5E /* PBXTargetDependency */,
+			);
+			name = RidersHelperTests;
+			productName = RidersHelperTests;
+			productReference = F1E8F84F1D6777AC00E20F5E /* RidersHelperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F1E8F8591D6777AC00E20F5E /* RidersHelperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1E8F8691D6777AC00E20F5E /* Build configuration list for PBXNativeTarget "RidersHelperUITests" */;
+			buildPhases = (
+				F1E8F8561D6777AC00E20F5E /* Sources */,
+				F1E8F8571D6777AC00E20F5E /* Frameworks */,
+				F1E8F8581D6777AC00E20F5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1E8F85C1D6777AC00E20F5E /* PBXTargetDependency */,
+			);
+			name = RidersHelperUITests;
+			productName = RidersHelperUITests;
+			productReference = F1E8F85A1D6777AC00E20F5E /* RidersHelperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1E8F8331D6777AC00E20F5E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Shu-Mei Cheng";
+				TargetAttributes = {
+					F1E8F83A1D6777AC00E20F5E = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = KNSC7P9S3V;
+						LastSwiftMigration = 0810;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					F1E8F84E1D6777AC00E20F5E = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = KNSC7P9S3V;
+						LastSwiftMigration = 0810;
+						TestTargetID = F1E8F83A1D6777AC00E20F5E;
+					};
+					F1E8F8591D6777AC00E20F5E = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = KNSC7P9S3V;
+						LastSwiftMigration = 0810;
+						TestTargetID = F1E8F83A1D6777AC00E20F5E;
+					};
+				};
+			};
+			buildConfigurationList = F1E8F8361D6777AC00E20F5E /* Build configuration list for PBXProject "RidersHelper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1E8F8321D6777AC00E20F5E;
+			productRefGroup = F1E8F83C1D6777AC00E20F5E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1E8F83A1D6777AC00E20F5E /* RidersHelper */,
+				F1E8F84E1D6777AC00E20F5E /* RidersHelperTests */,
+				F1E8F8591D6777AC00E20F5E /* RidersHelperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1E8F8391D6777AC00E20F5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1E8F8491D6777AC00E20F5E /* LaunchScreen.storyboard in Resources */,
+				F1E8F8461D6777AC00E20F5E /* Assets.xcassets in Resources */,
+				F1AA15331D8525160015907C /* icon_me.imageset in Resources */,
+				F19AE2891DA9B40300CF0F27 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1E8F84D1D6777AC00E20F5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1E8F8581D6777AC00E20F5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0817334BA5B80F023734DFFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		399243CC55CFC2F1F8C199A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RidersHelper/Pods-RidersHelper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		881DE6DA8D5E06BBB8D12A10 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RidersHelper/Pods-RidersHelper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1B54B601DA06B8800A7E05A /* bash "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh" */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\nEXTRACTED_ARCHS=()\n\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\n\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\n\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1E8F8371D6777AC00E20F5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F19AE2951DA9B4DA00CF0F27 /* GmapUtils.swift in Sources */,
+				F19AE28D1DA9B45B00CF0F27 /* MenuPickerController.swift in Sources */,
+				F1B241401DB091E100A15217 /* AlertMessage.swift in Sources */,
+				F19AE2931DA9B4B500CF0F27 /* RouteDirections.swift in Sources */,
+				F19AE29B1DA9B57C00CF0F27 /* MapTasks.swift in Sources */,
+				F19AE2871DA9B33500CF0F27 /* Friend.swift in Sources */,
+				F19AE2971DA9B4EA00CF0F27 /* Person.swift in Sources */,
+				F19AE2991DA9B52700CF0F27 /* Route.swift in Sources */,
+				F19AE29D1DA9C5C900CF0F27 /* CloudLocation.swift in Sources */,
+				F18E7CD81D98C7DC00704934 /* RouteStep.swift in Sources */,
+				F19AE2851DA9B2DD00CF0F27 /* Location.swift in Sources */,
+				F19AE28F1DA9B47A00CF0F27 /* DirectionTableViewController.swift in Sources */,
+				F107F9731D94A2AF00598101 /* Constants.swift in Sources */,
+				F1E8F83F1D6777AC00E20F5E /* AppDelegate.swift in Sources */,
+				F19AE28B1DA9B43100CF0F27 /* StartController.swift in Sources */,
+				F1B2413E1DB08B0500A15217 /* Reachability.swift in Sources */,
+				F19AE2911DA9B49900CF0F27 /* RoutesTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1E8F84B1D6777AC00E20F5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1E8F8541D6777AC00E20F5E /* RidersHelperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1E8F8561D6777AC00E20F5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1E8F85F1D6777AC00E20F5E /* RidersHelperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1E8F8511D6777AC00E20F5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1E8F83A1D6777AC00E20F5E /* RidersHelper */;
+			targetProxy = F1E8F8501D6777AC00E20F5E /* PBXContainerItemProxy */;
+		};
+		F1E8F85C1D6777AC00E20F5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1E8F83A1D6777AC00E20F5E /* RidersHelper */;
+			targetProxy = F1E8F85B1D6777AC00E20F5E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F1E8F8471D6777AC00E20F5E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1E8F8481D6777AC00E20F5E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1E8F8611D6777AC00E20F5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1E8F8621D6777AC00E20F5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1E8F8641D6777AC00E20F5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25B49720C20F22CFE6EE0290 /* Pods-RidersHelper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RidersHelper/RidersHelper.entitlements;
+				DEVELOPMENT_TEAM = KNSC7P9S3V;
+				FRAMEWORK_SEARCH_PATHS = (
+					RealmSwift.framework,
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = RidersHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "shumei.cheng.ca-gmail.com.RidersHelper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F1E8F8651D6777AC00E20F5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DAD1D4F85B952E2968BB001 /* Pods-RidersHelper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RidersHelper/RidersHelper.entitlements;
+				DEVELOPMENT_TEAM = KNSC7P9S3V;
+				FRAMEWORK_SEARCH_PATHS = (
+					RealmSwift.framework,
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = RidersHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "shumei.cheng.ca-gmail.com.RidersHelper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F1E8F8671D6777AC00E20F5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RidersHelperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "shumei.cheng.ca-gmail.com.RidersHelperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RidersHelper.app/RidersHelper";
+			};
+			name = Debug;
+		};
+		F1E8F8681D6777AC00E20F5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RidersHelperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "shumei.cheng.ca-gmail.com.RidersHelperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RidersHelper.app/RidersHelper";
+			};
+			name = Release;
+		};
+		F1E8F86A1D6777AC00E20F5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RidersHelperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "shumei.cheng.ca-gmail.com.RidersHelperUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RidersHelper;
+			};
+			name = Debug;
+		};
+		F1E8F86B1D6777AC00E20F5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RidersHelperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "shumei.cheng.ca-gmail.com.RidersHelperUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RidersHelper;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1E8F8361D6777AC00E20F5E /* Build configuration list for PBXProject "RidersHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1E8F8611D6777AC00E20F5E /* Debug */,
+				F1E8F8621D6777AC00E20F5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1E8F8631D6777AC00E20F5E /* Build configuration list for PBXNativeTarget "RidersHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1E8F8641D6777AC00E20F5E /* Debug */,
+				F1E8F8651D6777AC00E20F5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1E8F8661D6777AC00E20F5E /* Build configuration list for PBXNativeTarget "RidersHelperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1E8F8671D6777AC00E20F5E /* Debug */,
+				F1E8F8681D6777AC00E20F5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1E8F8691D6777AC00E20F5E /* Build configuration list for PBXNativeTarget "RidersHelperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1E8F86A1D6777AC00E20F5E /* Debug */,
+				F1E8F86B1D6777AC00E20F5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1E8F8331D6777AC00E20F5E /* Project object */;
+}
