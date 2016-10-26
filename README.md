@@ -1,11 +1,11 @@
 # App name: 
-	_*RidersHelper*_
+	**RidersHelper**
 
 ## IOS/Swift/Xcode versions: 
-	_*IOS9, Swfit3 Xcode8*__
+	**IOS9, Swfit3 Xcode8**
 
 ### Major Frameworks: 
-	*Realm Swift, Google Map, CouldKit*
+	**Realm Swift, Google Map, CouldKit**
 
 ### Functionality: 
 	Allow users to enter locations and get biking directions. It can save the routes, and also show friends locations. Every friend location will be presented using marker. (check showFriendOnMap)
@@ -15,4 +15,4 @@
 	*Use Xcode to open the proejct.
 
 ### Notes: 
-	Still need to use _TestFlight_ to check if *friend's locations* working.
+	Still need to use _TestFlight_ to check if __friend's locations__ working.
